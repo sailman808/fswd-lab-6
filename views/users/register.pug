@@ -1,0 +1,8 @@
+extends ../layout.pug
+block body
+  h1 Hello, #{user_id}!
+    p this is my first change for git
+    form.form-inline(method="POST" action="/users/" + user.user_id)
+      div.form-group
+        input.form-control(type="text" name="user" value=user.name)
+      button#add.btn.btn-default Submit
